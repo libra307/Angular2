@@ -25,7 +25,7 @@ export class AuthenService {
   }
   logout() {
     localStorage.removeItem(SystemConstants.CURRENT_USER);
-  }
+  } 
   isUserAuthenticated(): boolean {
     let user = localStorage.getItem(SystemConstants.CURRENT_USER)
     if (user != null) {
